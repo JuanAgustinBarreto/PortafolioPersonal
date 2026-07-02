@@ -172,7 +172,7 @@ const projects = [
     image: "img/project-5.jpg",
     tags: ["HTML", "CSS", "JavaScript"],
     github: GITHUB,
-    demo: GITHUB,
+    demo: "No disponible.",
   },
   {
     name: "Marcelo Barreto Propiedades Nogoyá - Gestión",
@@ -180,7 +180,7 @@ const projects = [
     image: "img/project-6.jpg",
     tags: ["HTML", "CSS", "JavaScript"],
     github: GITHUB,
-    demo: GITHUB,
+    demo: "No disponible.",
   },
   {
     name: "Meier Distribuciones",
@@ -188,7 +188,7 @@ const projects = [
     image: "img/project-7.jpg",
     tags: ["HTML", "CSS", "JavaScript", "JSON"],
     github: GITHUB,
-    demo: GITHUB,
+    demo: "No disponible.",
   },
 ];
 
