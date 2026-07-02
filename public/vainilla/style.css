@@ -458,12 +458,16 @@ svg { width: 1.05em; height: 1.05em; flex-shrink: 0; }
   letter-spacing: 0.1em;
   color: var(--muted);
 }
-.fact p, .social-card p {
-  font-size: 0.9rem;
-  font-weight: 500;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.fact p,
+.social-card p{
+    font-size: .9rem;
+    font-weight: 500;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    line-height: 1.5;
 }
 .fact > div { min-width: 0; }
 
@@ -794,26 +798,25 @@ svg { width: 1.05em; height: 1.05em; flex-shrink: 0; }
 /* ===========================
    Mejoras para móviles
 =========================== */
-@media (max-width: 560px) {
+@media (max-width:560px){
 
-  .about-text{
-    width: 100%;
-  }
+    .about-text p{
+        font-size:.95rem;
+        line-height:1.8;
+        word-break:break-word;
+        overflow-wrap:anywhere;
+    }
 
-  .about-text p{
-    font-size: 0.98rem;
-    line-height: 1.8;
-    text-align: left;
-    word-break: break-word;
-    overflow-wrap: anywhere;
-  }
+    .facts{
+        padding:1.2rem;
+    }
 
-  .section .container{
-    padding-inline: 1.2rem;
-  }
+    .fact{
+        align-items:flex-start;
+    }
 
-  .section h2{
-    font-size: 2rem;
-    line-height: 1.2;
-  }
+    .fact > div{
+        flex:1;
+        min-width:0;
+    }
 }
