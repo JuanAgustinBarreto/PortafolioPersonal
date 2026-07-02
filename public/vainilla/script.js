@@ -113,7 +113,6 @@ const techs = [
   ["Java", "Jv"],
   ["PHP", "php"],
   ["Python", "Py"],
-  ["Angular", "Ng"],
   ["Node.js", "Nd"],
   ["Linux", ">_"],
   ["Windows", "Win"],
