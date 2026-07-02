@@ -188,7 +188,7 @@ const projects = [
     image: "img/project-7.jpg",
     tags: ["HTML", "CSS", "JavaScript", "JSON"],
     github: GITHUB,
-    demo: "https://meier-distribuciones.vercel.app/",
+    demo: GITHUB,
   },
 ];
 
