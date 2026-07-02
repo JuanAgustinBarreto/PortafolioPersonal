@@ -14,16 +14,22 @@ window.addEventListener("load", () => {
   }, 900);
 });
 
-/* ---------- Navbar dinámica ---------- */
 const nav = document.getElementById("nav");
-const onNavScroll = () => nav.classList.toggle("scrolled", window.scrollY > 24);
+const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobileMenu");
+
+/* ---------- Navbar dinámica ---------- */
+const onNavScroll = () => {
+  const scrolled = window.scrollY > 80;
+
+  nav.classList.toggle("scrolled", scrolled);
+  nav.classList.toggle("compact", scrolled);
+};
+
 onNavScroll();
 window.addEventListener("scroll", onNavScroll, { passive: true });
 
 /* ---------- Menú móvil ---------- */
-const hamburger = document.getElementById("hamburger");
-const mobileMenu = document.getElementById("mobileMenu");
-
 hamburger.addEventListener("click", () => {
   const open = mobileMenu.classList.toggle("open");
   hamburger.classList.toggle("open", open);
@@ -35,10 +41,13 @@ document.querySelectorAll(".nav-go").forEach((link) => {
   link.addEventListener("click", (e) => {
     const id = link.getAttribute("href");
     if (!id || !id.startsWith("#")) return;
+
     const target = document.querySelector(id);
     if (!target) return;
+
     e.preventDefault();
     target.scrollIntoView({ behavior: "smooth" });
+
     mobileMenu.classList.remove("open");
     hamburger.classList.remove("open");
   });
