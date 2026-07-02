@@ -790,3 +790,30 @@ svg { width: 1.05em; height: 1.05em; flex-shrink: 0; }
   .t-dot { left: -2.55rem; }
   .footer-inner { flex-direction: column; text-align: center; }
 }
+
+/* ===========================
+   Mejoras para móviles
+=========================== */
+@media (max-width: 560px) {
+
+  .about-text{
+    width: 100%;
+  }
+
+  .about-text p{
+    font-size: 0.98rem;
+    line-height: 1.8;
+    text-align: left;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  .section .container{
+    padding-inline: 1.2rem;
+  }
+
+  .section h2{
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+}
