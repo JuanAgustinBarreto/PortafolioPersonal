@@ -128,12 +128,8 @@ svg { width: 1.05em; height: 1.05em; flex-shrink: 0; }
   padding: 1rem 0;
   transition: padding 0.5s var(--ease);
 }
-.nav.compact .nav-inner {
-  justify-content: space-between;
-}
-
-.nav.compact .brand {
-  font-size: 1rem;
+.nav.compact .nav-links {
+  display: none;
 }
 .nav-inner {
   max-width: 72rem;
